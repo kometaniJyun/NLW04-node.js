@@ -1,0 +1,32 @@
+Testes Automatizados
+
+
+1 - Testes unitários
+
+2 - Testes de integração
+
+-> request -> routes -> controller -> repository
+<- repository <- controller <- response
+
+3 - Ponta a Ponta (E2E)
+
+Ferramenta Jest
+yarn add jest @types/jest -D
+
+yarn add ts-jest -D
+
+jest
+bail: true //Barra o teste em caso de falha
+
+describe("First", () => {
+  it("deve ser possível somar 2 números", () => {
+    expect(2 + 2).toBe(4);
+  });
+
+  it("deve ser possível somar 2 números", () => {
+    expect(2 + 2).not.toBe(5);
+  });
+});
+
+
+https://www.npmjs.com/package/supertest
