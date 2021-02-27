@@ -30,3 +30,6 @@ describe("First", () => {
 
 
 https://www.npmjs.com/package/supertest
+
+
+"posttest": "rimraf ./src/database/database.test.sqlite" //remover bd depois do test
